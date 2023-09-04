@@ -1,0 +1,21 @@
+spring:
+  security:
+    user:
+      name: user
+      password: password
+      roles: ADMIN
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/interview
+    username: arnoldkk
+    password: AmcoolKK@1209
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database: mysql
+
+server:
+  port: 9090
+
