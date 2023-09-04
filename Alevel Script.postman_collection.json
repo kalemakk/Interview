@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "0126ad25-5bb5-4b5f-a0e5-f14b63a41c4e",
+		"name": "Alevel Script",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17959929",
+		"_collection_link": "https://warped-shadow-335934.postman.co/workspace/Interview~f0706050-530d-4f36-bfcb-6176b0941c45/collection/17959929-0126ad25-5bb5-4b5f-a0e5-f14b63a41c4e?action=share&source=collection_link&creator=17959929"
+	},
+	"item": [
+		{
+			"name": "Get All Alevel Scripts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/v1/alevel-scripts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"alevel-scripts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alevel Script",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/v1/alevel-scripts/ST0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"alevel-scripts",
+						"ST0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Alevel Script",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"candidate_name\": \"arnold kalema\",\r\n\"candidate_number\": \"ST0001\",\r\n\"year\": 2023,\r\n\"subject_code\": \"BSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/alevel-scripts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"alevel-scripts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Alevel Script",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/v1/alevel-scripts/ST0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"alevel-scripts",
+						"ST0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Alevel Script",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"candidate_number\": \"ST0001\",\r\n\"candidate_name\": \"arnold kalema2\",\r\n\"year\": 2023,\r\n\"subject_code\": \"BSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/alevel-scripts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"alevel-scripts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

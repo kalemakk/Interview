@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "83534f42-d2b3-4440-8ef2-00ec42ebba4e",
+		"name": "Olevel Script",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17959929",
+		"_collection_link": "https://warped-shadow-335934.postman.co/workspace/Interview~f0706050-530d-4f36-bfcb-6176b0941c45/collection/17959929-83534f42-d2b3-4440-8ef2-00ec42ebba4e?action=share&source=collection_link&creator=17959929"
+	},
+	"item": [
+		{
+			"name": "Get All Olevel Scripts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/v1/olevel-scripts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"olevel-scripts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Olevel Script",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/v1/olevel-scripts/ST0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"olevel-scripts",
+						"ST0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Olevel Script",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"candidate_name\": \"arnold kalema\",\r\n\"candidate_number\": \"ST0002\",\r\n\"year\": 2023,\r\n\"subject_code\": \"BSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/olevel-scripts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"olevel-scripts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Olevel Script",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/v1/olevel-scripts/ST0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"olevel-scripts",
+						"ST0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Olevel Script",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"candidate_number\": \"ST0002\",\r\n\"candidate_name\": \"arnold kalema2\",\r\n\"year\": 2023,\r\n\"subject_code\": \"BSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/olevel-scripts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"olevel-scripts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "user",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
